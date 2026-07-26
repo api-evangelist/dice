@@ -1,8 +1,13 @@
 aid: dice
 name: DICE
-description: 'DICE is a company surfaced as a portfolio company of softbank-vision-fund and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'DICE is a mobile-first live events discovery and ticketing platform founded in London in 2014
+  by Phil Hutcheon. Through the DICE app (iOS and Android) and dice.fm, fans discover concerts, club nights,
+  festivals, tours and livestreams, buy fee-transparent tickets that live securely in-app, join waiting lists
+  for sold-out shows, and resell tickets at face value to curb touting. DICE also runs a partner business
+  serving venues, promoters, artists and festivals with tools to reach fans, sell tickets and grow their
+  audiences, and owns the Boiler Room brand. Backed by SoftBank Vision Fund, DICE operates across the UK,
+  Europe and the US. DICE publishes no public developer API; this profile captures the company''s public
+  web, security and legal surface.'
 url: https://raw.githubusercontent.com/api-evangelist/dice/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +15,63 @@ x-backed-by:
 - softbank-vision-fund
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://dice.fm/static/images/dice-fan-social.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Live Events
+- Ticketing
+- Music
+- Events
+- Entertainment
+- Mobile
+- Marketplace
+- Discovery
 apis: []
+common:
+- type: VulnerabilityDisclosure
+  url: security/dice-vulnerability-disclosure.yml
+- type: Security
+  url: https://dice.fm/.well-known/security.txt
+- type: DomainSecurity
+  url: security/dice-domain-security.yml
+- type: WellKnown
+  url: well-known/dice-well-known.yml
+- type: SecurityTxt
+  url: well-known/dice-security.txt
+- type: Website
+  url: https://dice.fm/
+- type: Blog
+  url: https://dice.fm/blog
+- type: Support
+  url: https://dice.fm/help
+- type: TermsOfService
+  url: https://dice.fm/terms_and_conditions.html
+- type: PrivacyPolicy
+  url: https://dice.fm/privacy_policy.html
+- type: GitHubOrganization
+  url: https://github.com/dicefm
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
